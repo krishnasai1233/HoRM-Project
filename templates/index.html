@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Attendance Insights</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align:center; padding-top:80px; background:#f7f9fb; }
+    .btn { padding:18px 36px; margin:20px; font-size:18px; border-radius:8px; border:none; cursor:pointer; }
+    .emp { background:#007BFF; color:white; }
+    .acc { background:#28A745; color:white; }
+  </style>
+</head>
+<body>
+  <h1>Attendance Insights Portal</h1>
+  <p>Select analysis mode:</p>
+  <div>
+    <form action="/employee" method="get" style="display:inline-block;">
+      <button class="btn emp">Check Single Person Details</button>
+    </form>
+    <form action="/account" method="get" style="display:inline-block;">
+      <button class="btn acc">Check Account Details</button>
+    </form>
+  </div>
+</body>
+</html>
